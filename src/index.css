@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #0c0b10;
+    /* background-color: white; */
+    color: white;
+    font-family: poppins, sans-serif;
+}
+
+.glass2 {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.input-glass {
+    background-color: #2f2e3065;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.input-glass2 {
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.input {
+    @apply border-2;
+    border-image: linear-gradient(90deg, #933ffe, #18c8ff) 1;
+}
+
+.active {
+    background: linear-gradient(#1f8ebe #440495 #440495 #b102cd);
+}
